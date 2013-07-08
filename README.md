@@ -40,7 +40,7 @@ You should have [Pathogen](https://github.com/tpope/vim-pathogen) installed.
 
 ## Usage
 
-autoHEADER is able to insert comment block at the head of you source file automatically when you are creating
+vim-licenseAdd is able to insert comment block at the head of you source file automatically when you are creating
 a new file with `vim newfile.py -c 'Licence mit` in console , or `:Licence mit` in vim. 
 
 You can also specify the Email and the User name in `.vimrc`
