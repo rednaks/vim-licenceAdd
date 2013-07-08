@@ -12,7 +12,7 @@
 
 ## Introduction
 
-autoHEADER is a vim helper plugin for easier inserting comment header block contains varies of infomation.
+vim-licenceAdd is a vim helper plugin for easier inserting comment header block contains Licences.
 For example, a typical python comment header block may like this:
 
 
