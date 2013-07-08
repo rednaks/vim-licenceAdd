@@ -35,13 +35,8 @@ For example, a typical python comment header block may like this:
 
 ## Install
 
-To install you can just clone or download the source code and extract into your `.vim` folder. 
-But the recommended way to install autoHEADER is through [vundle](https://github.com/gmarik/vundle).
-Just add the following line into your `.vimrc` :
-
-    Bundle 'shanzi/autoHEADER'     "autoHEADER
-
-And then run command `:BundleInstall`
+To install you can just clone or download the source code and extract into your `.vim/bundle/` folder. 
+You should have [Pathogen](https://github.com/tpope/vim-pathogen) installed.
 
 ## Usage
 
