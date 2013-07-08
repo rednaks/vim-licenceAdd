@@ -1,8 +1,9 @@
 <!--********************************************************************************
 *     File Name           :     README.md
 *     Created By          :     shanzi
+*     Hacked By           :     shanzi
 *     Creation Date       :     [2012-10-04 01:10]
-*     Last Modified       :     [2013-04-05 00:48]
+*     Last Modified       :     [2013-07-08 21:22]
 *     Description         :     Introduction to autoHEADER
 *********************************************************************************-->
 
@@ -16,13 +17,21 @@ For example, a typical python comment header block may like this:
 
 
     #! /usr/bin/env python
-    #################################################################################
-    #     File Name           :     test.py
-    #     Created By          :     shanzi
-    #     Creation Date       :     [2012-10-04 01:15]
-    #     Last Modified       :     [AUTO_UPDATE_BEFORE_SAVE]
-    #     Description         :     
-    #################################################################################
+    ##
+    # Copyright (C) 2013  Alexandre BM <s@rednaks.tn>
+    # This program is free software: you can redistribute it and/or modify
+    # it under the terms of the GNU General Public License as published by
+    # the Free Software Foundation, either version 3 of the License, or
+    # (at your option) any later version.
+    #   
+    # This program is distributed in the hope that it will be useful,
+    # but WITHOUT ANY WARRANTY; without even the implied warranty of
+    # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    # GNU General Public License for more details.
+    #   
+    # You should have received a copy of the GNU General Public License
+    # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 
 ## Install
 
@@ -37,25 +46,17 @@ And then run command `:BundleInstall`
 ## Usage
 
 autoHEADER is able to insert comment block at the head of you source file automatically when you are creating
-a new file with `vim newfile.py` in console , or `:e new.vim` in vim. 
+a new file with `vim newfile.py -c 'Licence mit` in console , or `:Licence mit` in vim. 
 
-You can also invoke the function by hand with command `:AutoHeader`
+You can also specify the Email and the User name in `.vimrc`
 
-By default autoHEADER enables itself the moment vim launches, you can cancel this by adding
-`let g:autoHEADER_auto_enable=0` to your `.vimrc` file.
-
-To enable or disable autoHEADER by hand , use `:AutoHeaderEnable` and `:AutoHeaderDisable` .
 
 ## Config
 
-1. `g:autoHEADER_auto_enable`
-    Decide whether autoHEADER will be auto loaded when vim launches, default is 1.
-2. `g:autoHEADER_default_author`
-    The default author name displayed follows _Creation By_ , the default value is
-    your $USER environment varible.
-3. `g:autoHEADER_fill_char_repeat`
-    Repeat of chars on top and at bottom of the comment block.
-    The default value is 80.
+1. `g:userName`
+    Your name, to be used in the licence.
+2. `g:userEmail`
+    Your email adress, used in the licence.
 
 
 ## Licence
@@ -89,5 +90,10 @@ To enable or disable autoHEADER by hand , use `:AutoHeaderEnable` and `:AutoHead
     The views and conclusions contained in the software and documentation 
     are those of the authors and should not be interpreted as representing
     official policies, either expressedor implied, of sh.
+
+    ****************************************************************************
+
+    Copyright (C) 2013 Alexandre BM <s@rednaks.tn>
+    The hacked code is under GNU General Public V3 Licence.
 
 

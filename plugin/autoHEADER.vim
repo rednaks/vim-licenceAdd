@@ -12,7 +12,7 @@ endif
 
 
 if !exists('g:autoHEADER_auto_enable')
-    let g:autoHEADER_auto_enable=1
+    let g:autoHEADER_auto_enable=0
 endif
 
 if !exists('g:autoHEADER_fill_char_repeat')
@@ -24,6 +24,13 @@ if !exists('g:autoHEADER_default_author')
     let g:autoHEADER_default_author=$USER
 endif
 
+if !exists('g:userName')
+    let g:userName = '<Your Name Here>'
+endif
+
+if !exists('g:userEmail')
+    let g:userEmail = 'Your Email Here'
+endif
 
 if g:autoHEADER_auto_enable
     call autoHEADER#enable()
