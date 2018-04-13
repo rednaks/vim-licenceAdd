@@ -92,7 +92,7 @@ fun! s:insert_header_with_ft(ft, licenceName)
             endif
 
             " start of comment block
-            call append(start_line, repeat(' ', 1) . style[0] . repeat(style[3], 1))
+            call append(start_line, repeat('', 1) . style[0] . repeat(style[3], 1))
             let start_line += 1
 
             for message in messages
@@ -104,7 +104,7 @@ fun! s:insert_header_with_ft(ft, licenceName)
             let endline = start_line
 
             " end of comment block
-            call append(start_line,repeat(' ', 1) . style[2])
+            call append(start_line,repeat('', 1) . style[2])
             let start_line += 1
 
             " appendix
